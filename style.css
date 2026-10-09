@@ -1,0 +1,280 @@
+/* General website styling */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f8f5ed;
+    color: #344638;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* Website header */
+
+header {
+    background-color: #dce5d5;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-bottom: 5px;
+    color: #365640;
+}
+
+header p {
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 0;
+}
+
+/* Navigation menu */
+
+nav {
+    background-color: #526b50;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 8px 12px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #f4d4dc;
+}
+
+/* Main content */
+
+main {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: 1px solid #e6e0d3;
+}
+
+h2 {
+    color: #365640;
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Smaller screens */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    section {
+        padding: 22px;
+    }
+}
+
+/* Follicular phase feature layout */
+.follicular-card h3 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    color: #365640;
+}
+
+#menstruation h1,
+#menstruation h2,
+#menstruation h3,
+#menstruation h4,
+#ovulation h1,
+#ovulation h2,
+#ovulation h3,
+#ovulation h4,
+#luteal h1,
+#luteal h2,
+#luteal h3,
+#luteal h4,
+.menstruation-card h1,
+.menstruation-card h2,
+.menstruation-card h3,
+.menstruation-card h4,
+.ovulation-card h1,
+.ovulation-card h2,
+.ovulation-card h3,
+.ovulation-card h4,
+.luteal-card h1,
+.luteal-card h2,
+.luteal-card h3,
+.luteal-card h4 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: normal;
+    color: #365640;
+}
+.phase-intro {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-style: italic;
+    color: #365640;
+    max-width: 760px;
+}
+.follicular-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    gap: 28px;
+    align-items: start;
+    margin-top: 25px;
+}
+.follicular-steps {
+    display: grid;
+    gap: 16px;
+}
+.follicular-step {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 13px;
+    align-items: start;
+}
+.follicular-step span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f5cfcc;
+    color: #365640;
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+.follicular-step p {
+    margin: 3px 0 0;
+    font-family: Georgia, serif;
+    line-height: 1.65;
+}
+.follicular-visuals {
+    display: grid;
+    gap: 22px;
+}
+.follicle-figure {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #e6d9ca;
+    border-radius: 14px;
+    background: #fffaf5;
+}
+.follicle-figure figcaption {
+    padding: 14px;
+    background: #f7dfdf;
+    color: #365640;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-style: italic;
+}
+.follicle-figure img {
+    display: block;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+}
+.image-caption {
+    padding: 0 18px 16px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #526b50;
+}
+.key-points {
+    padding: 22px;
+    border-radius: 16px;
+    background: #edf0e5;
+}
+.key-points h4 {
+    margin-top: 0;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-style: italic;
+    color: #365640;
+}
+.key-points ul {
+    padding-left: 22px;
+}
+.key-points li {
+    margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+    .follicular-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Luteal phase and PMS information */
+
+.luteal-card h4 {
+    font-family: Georgia, serif;
+    color: #365640;
+}
+
+.luteal-card h4 {
+    font-size: 23px;
+    margin-top: 28px;
+}
+
+.luteal-card li {
+    margin-bottom: 12px;
+}
+
+.pms-note {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f7dfdf;
+    border-left: 5px solid #c87982;
+    border-radius: 10px;
+}
+
+.pms-note p:first-child {
+    margin-top: 0;
+}
+
+.pms-figure {
+    max-width: 350px;
+    margin: 28px auto 0;
+    text-align: center;
+}
+
+.pms-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.pms-figure figcaption {
+    margin-top: 10px;
+    color: #526b50;
+    font-style: italic;
+}
